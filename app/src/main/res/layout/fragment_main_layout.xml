@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorF5F6FA"
+              android:clipToPadding="false"
+              android:clipChildren="false">
+
+    <FrameLayout
+            android:id="@+id/fragment_panel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <include
+            android:id="@+id/bottom_panel"
+            layout="@layout/fragment_bottom_panel_layout"
+    />
+
+</LinearLayout>

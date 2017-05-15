@@ -1,0 +1,12 @@
+com.mr.http
+com.mr.http.config
+com.mr.http.error
+com.mr.http.init
+com.mr.http.log
+com.mr.http.mime
+com.mr.http.mime.content
+com.mr.http.model.rsp
+com.mr.http.request
+com.mr.http.ssl
+com.mr.http.toolbox
+com.mr.http.util

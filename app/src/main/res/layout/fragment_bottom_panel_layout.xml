@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimens55dp"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/table_bar_bg"
+              android:clipToPadding="false"
+              tools:showIn="@layout/fragment_main_layout">
+
+    <kechuang.mr.com.kcjh.fragment.controls.BottomPanelLayout
+            android:id="@+id/bottom_icon_home"
+            android:layout_width="@dimen/dimens0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimens5dp"/>
+
+    <kechuang.mr.com.kcjh.fragment.controls.BottomPanelLayout
+            android:id="@+id/bottom_icon_life"
+            android:layout_width="@dimen/dimens0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimens5dp"/>
+
+    <kechuang.mr.com.kcjh.fragment.controls.BottomPanelLayout
+            android:id="@+id/bottom_icon_card"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/dimens60dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="@dimen/dimens5dp"
+            android:background="@drawable/agree_pressed"
+    />
+
+    <kechuang.mr.com.kcjh.fragment.controls.BottomPanelLayout
+            android:id="@+id/bottom_icon_info"
+            android:layout_width="@dimen/dimens0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimens5dp"/>
+
+    <kechuang.mr.com.kcjh.fragment.controls.BottomPanelLayout
+            android:id="@+id/bottom_icon_my"
+            android:layout_width="@dimen/dimens0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimens5dp"/>
+
+</LinearLayout>
