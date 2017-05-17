@@ -5,9 +5,8 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Message;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -27,6 +26,7 @@ import kechuang.mr.com.kcjh.utils.PermissionHelper;
 
 @SuppressLint("NewApi")
 public class MainActivity extends CommonBaseActivity implements View.OnClickListener ,IRequestListener {
+    
     /**
      * Fragment 管理器
      */

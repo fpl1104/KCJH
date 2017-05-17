@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.ButterKnife;
 import kechuang.mr.com.kcjh.fragment.CardFragment;
 import kechuang.mr.com.kcjh.fragment.HomeFragment;
 import kechuang.mr.com.kcjh.fragment.InfoFragment;
@@ -37,6 +38,7 @@ public abstract class CommonBaseFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		setBase();
 		thisView = initContentView(inflater, container, savedInstanceState);
+		ButterKnife.bind(this,thisView);
 		setHandler();
 		initData();
 		onListener();
