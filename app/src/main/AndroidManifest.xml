@@ -54,7 +54,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-
     <application
         android:name=".application.ApplicationController"
         android:allowBackup="true"
@@ -62,29 +61,45 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:icon, android:theme"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="113026-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="6a72e43881403644e5363dda09ee8a7e" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjrOJz43FAQH1B0FrJiQch81riUGnElMrw6tEtuUvJ8IinPKbASvwT9CC7l0PRVYkDgdlvo5VgBwKd00hTu7BzlE15u3IWIt+5F2BYEooudZfB8SYBavYfLXEmnKMlO+gX1wNMhy+nb5uGOW6tC1uGeMaVuzNe24ZnO9/WmNq0WfUaE2uHsqcSjHN1lrl9Shh+waDTSNIv7ySp5rBwAPkNPKm9CV7YaVFxXseS2OPpUTmC37+XkGzRRBrYX1mmXkXWERW6mn2vecM+PvHi2EyS13w553iHbQTjXcSuLMtWcXE396TYQg+KXCO1SwZXZphRJqM/Hb+wf1E/CHtrnLG3AgMBAAECggEAfbEOViCbn9PmXNw8W/g22gOgD5vhHW2GS2yIJqzdXr6wsn0JMTJkUo5vdJ+9HMyq416cM/dThuLbR4gxStwfrSJ+PLWN7yHo3KLvAbN7GiKD4BPoM76IM3kaI6S2RKm0mlor1mEaX2J99J22OH04VBP7rJCN6pJ6rFx2kL3hdg1CL0QNQ/0QGs5jNQHlmw2jh6AO0rG8/2aPKMKwq7LqkFGl/cmW3QtTz0GH4YiBUJEUoVfaJVLodxXne4gxOmb1QzhQigdNrlTTfpAS4otCsHZHhZWJb175ZK4loGfqdQbtldyOnIMZ3JscweunHsUT9NT57vhr45j7pwMJpC3WQQKBgQDn1oRg3HenenpvtANulGilegnhqw6Q0cNZb/oCxCNcM0AEqgWLCiu3J8hUGaWykh4RL4nodnHbITqfD6uDsxwRAN2WCuWbjRBajlOKoqC6YdNkph3j6j8LMYVZlRY7dVAxYl5shW+z11rjvVKpVK0UFy9SX31jz/3aB/W9EKk/MwKBgQC0u8Zm4Q43GZqhoMA0Vy7azLSz3wSVMJOmXKBUuXrHMk9h5JYYYWAlkQ7oKmAk4hKy34AFc9KbPYj7bki/g+F7DtW5DThSyOo73ezcZJC+XX0Sl9S8Q8Zd8Z0d6R+fPHqOrFMqHb/PePOHhalKmuU0/MJMlKhmzY8FMXbYXLQTbQKBgDcX3UF/Ytfj3TCqYJ5omi2owKxmEAIONxQL7ie2IIkKjM4O8V5HPng59fs2VRAIdSi0WVtqukfOr7WY7bNQXv0TbZT4ZfP/I8HBTM0HNJbWJHwolbXRtsWcMQpGyY+7oyD5NWMompDsPmccWIZw3uiFUfOLSarshHDJr3YMfYvNAoGBAIM36f572/RJVKmQqrvVqKEXCwOlIhCnaivZCFc7K1dAwb3TVt5wpHvh667IRXHB6c2Q08QhqYEoljHmik7yE11jEez/GiuQz++TWwtQwH5WJh6/uabOllFSwL4cqebU5C5+Ewt6+e5KZJW6h4UxHMTx1qf/Lp0lFXexyBWiiOOpAoGBAJJWYJlayl0oiU12JduKEEKjMEOFodFh7w5hjNKYwVdopcuHk4FYjVxqtZyyiJ0MRHjByY6lrL+p+pW+83C7Em5nYztQyi742T3bZc5NmEuZFTN3GdTsCiPRarcyQODJcihjfRdjPkrky6joj5xgDmgcIffVT87ylT+YqVV1Mdf9" />
         <!-- 启动页 -->
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".IntroActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-
-        <activity android:name=".activity.MainActivity">
-
-        </activity>
+        <activity android:name=".activity.login.LoginByMemberCardActivity" />
+        <activity android:name=".activity.commend.CommendFriendActivity"></activity>
     </application>
 
 </manifest>

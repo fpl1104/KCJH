@@ -25,6 +25,7 @@
     <dimen name="dimens40dp">40dp</dimen>
     <dimen name="dimens43dp">43dp</dimen>
     <dimen name="dimens45dp">45dp</dimen>
+    <dimen name="dimens48dp">48dp</dimen>
     <dimen name="dimens50dp">50dp</dimen>
     <dimen name="dimens53dp">53dp</dimen>
     <dimen name="dimens55dp">55dp</dimen>
@@ -37,6 +38,7 @@
     <dimen name="dimens97dp">97dp</dimen>
     <dimen name="dimens100dp">100dp</dimen>
     <dimen name="dimens171dp">171dp</dimen>
+    <dimen name="dimens250dp">250dp</dimen>
     <dimen name="dimens300dp">300dp</dimen>
 
     <!-- sp dimen -->

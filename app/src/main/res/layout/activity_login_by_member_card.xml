@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kechuang.mr.com.kcjh.activity.login.LoginByMemberCardActivity">
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="@dimen/dimens250dp"
+        android:layout_height="@dimen/dimens100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <LinearLayout
+        android:id="@+id/rl_num_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/iv_login"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimens50dp"
+        android:paddingRight="@dimen/dimens50dp"
+        android:layout_marginTop="25dp">
+        <View
+            android:layout_width="@dimen/dimens80dp"
+            style="@style/splitLineStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/member_card_login"
+            android:paddingLeft="@dimen/dimens20dp"
+            android:paddingRight="@dimen/dimens20dp"
+            android:textColor="@color/color878A91"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="@dimen/dimens80dp"
+            style="@style/splitLineStyle"  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_seccode"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_below="@+id/rl_num_log"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bg_corner_et"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@+id/tv_phone"
+            android:paddingLeft="17dp"
+            android:hint="@string/input_card_number"
+            android:gravity="center_vertical"
+            android:textColor="@color/color333333"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color333333" />
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/et_seccode"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="@string/input_phone_number"
+                android:maxLength="6"
+                android:inputType="number"
+                android:paddingLeft="17dp"
+                android:textColor="@color/color333333"
+                android:textSize="15dp" />
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/CommonBtn"
+        android:layout_below="@+id/ll_seccode"
+        android:layout_marginTop="17dp"
+        android:text="@string/login"
+        android:layout_marginRight="@dimen/dimens40dp"
+        android:layout_marginLeft="@dimen/dimens40dp"
+        android:textColor="@color/tv_white"
+        android:textSize="15dp"
+        />
+</RelativeLayout>

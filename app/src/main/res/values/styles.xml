@@ -26,7 +26,7 @@
     <!-- 分割线 -->
     <style name="splitLineStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0.5px</item>
+        <item name="android:layout_height">@dimen/dimens1dp</item>
         <item name="android:background">@color/colorEEEEEE</item>
     </style>
 
@@ -43,5 +43,13 @@
         <item name="android:activityOpenExitAnimation">@anim/set_slide_left_out</item>
         <item name="android:activityCloseEnterAnimation">@anim/set_slide_left_in</item>
         <item name="android:activityCloseExitAnimation">@anim/set_slide_right_out</item>
+    </style>
+    <!-- Button样式1 左右有间距 -->
+    <style name="CommonBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimens48dp</item>
+        <item name="android:background">@drawable/btn_selector_red_gray</item>
+        <item name="android:textColor">@drawable/text_selector_white_gray</item>
+        <item name="android:textSize">15sp</item>
     </style>
 </resources>

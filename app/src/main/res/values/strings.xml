@@ -32,11 +32,28 @@
     <string name="submit">提交</string>
     <string name="username">用户名</string>
     <string name="input_phone_number">请输入手机号</string>
+    <string name="input_card_number">请输入会员卡号</string>
     <string name="forgot_password">忘记密码</string>
     <string name="register">注册</string>
     <string name="input_password">请输入密码</string>
     <string name="login">登录</string>
-    <string name="login_success">登录</string>
+    <string name="get_code">获取验证码</string>
+    <string name="telephone_login">手机号快速登录</string>
+    <string name="member_card_login">会员卡登录</string>
+    <string name="third_pard_login">第三方快速登录</string>
+    <string name="weibo">微博</string>
+    <string name="wechat">微信</string>
+    <string name="QQ">QQ</string>
+    <string name="member_card">会员卡</string>
+    <string name="login_success">登录成功</string>
+    <!-- 推荐人 -->
+
+
+    <string name="find_friends">发现附近聊友</string>
+    <string name="pass">忽略</string>
+    <string name="one_key_follow">一键关注</string>
+    <string name="follow">关注</string>
+    <string name="newest">最新动态</string>
     <string name="reference">推荐人</string>
     <string name="statements">我已阅读并同意</string>
     <string name="useragreement">《用户协议》</string>

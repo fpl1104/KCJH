@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_weibo"
+        android:layout_width="@dimen/dimens0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dimens5dp"
+        android:drawableTop="@drawable/btn_weibo"
+        android:text="@string/weibo" />
+    <TextView
+        android:id="@+id/tv_wechat"
+        android:layout_width="@dimen/dimens0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dimens5dp"
+        android:drawableTop="@drawable/btn_wechat"
+        android:text="@string/wechat" />
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="@dimen/dimens0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dimens5dp"
+        android:drawableTop="@drawable/btn_qq"
+        android:text="@string/QQ" />
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="@dimen/dimens0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dimens5dp"
+        android:drawableTop="@drawable/btn_membershipcard"
+        android:text="@string/member_card" />
+</LinearLayout>

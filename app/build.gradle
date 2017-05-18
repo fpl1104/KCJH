@@ -17,20 +17,32 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories"
+        }
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
     compile project(':Library_Http')
     compile files('libs/library_mr_utils.jar')
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'//下拉刷新上拉加载
-    compile ('com.alibaba.android:vlayout:1.0.6@aar') {
+    //下拉刷新上拉加载
+    compile('com.alibaba.android:vlayout:1.0.6@aar') {
         transitive = true
     }
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.taobao.android:alisdk-hotfix:2.0.9'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }
+
+
+
+
